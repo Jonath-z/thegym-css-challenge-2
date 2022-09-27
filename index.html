@@ -5,7 +5,463 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
-    <title>Document</title>
+    <title>SopraSteria | clone</title>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <header
+        class="flex justify-between items-center py-2 px-3 h-fit bg-white border-b fixed top-0 left-0 right-0 w-full z-20 xl:hidden"
+      >
+        <img src="./assets/Sopra-Steria-logo.svg" class="w-44 h-10" />
+
+        <div class="flex justify-between gap-4 xl:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="{1.5}"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="{1.5}"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+      </header>
+
+      <!-- Header on Extra large screen -->
+      <header
+        class="hidden xl:flex xl:flex-col w-full px-[13rem] mx-auto absolute top-0 right-0 h-32 left-0 py-5 bg-gradient-to-b from-black/80 to-transparent z-20"
+      >
+        <section
+          class="hidden xl:flex xl:flex-col w-full mx-auto z-20 relative bg-transparent"
+        >
+          <div class="flex justify-between items-center">
+            <ul class="flex font-humer gap-5 text-white">
+              <li class="hover:underline transition-all cursor-pointer">
+                Carreer
+              </li>
+              <li class="hover:underline transition-all cursor-pointer">
+                Newsroom
+              </li>
+            </ul>
+
+            <ul class="flex gap-3">
+              <li
+                class="flex text-white font-humer justify-between w-40 cursor-pointer"
+              >
+                <span class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="{1.5}"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    />
+                  </svg>
+
+                  <span>Global</span>
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </li>
+
+              <li class="flex gap-3 text-white font-humer cursor-pointer">
+                <span>English</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <section
+            class="hidden xl:flex justify-between items-center top-10 py-2 px-3 h-fit bg-white border-b absolute left-0 right-0 w-full mx-auto z-20"
+          >
+            <img
+              src="./assets/Sopra-Steria-logo.svg"
+              class="w-56 h-12 object-cover"
+            />
+
+            <ul class="flex items-center gap-5 font-humer">
+              <li>Services</li>
+              <li>Industries</li>
+              <li>Insight</li>
+              <li>Inverstors</li>
+              <li>About us</li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </header>
+      <section
+        class="relative flex flex-col items-start justify-center lg:h-screen"
+      >
+        <img src="./assets/bg.jpg" class="w-full h-80 object-cover lg:h-full" />
+        <div
+          class="absolute px-5 w-full bg-black/20 h-full lg:flex lg:flex-col lg:justify-center lg:px-20 xl:pl-[13rem]"
+        >
+          <h1
+            class="text-white font-bold text-2xl pt-20 font-huumer-bold lg:text-3xl xl:text-4xl"
+          >
+            Sopra Steria and OVHcloud expand
+            <br class="hidden lg:block xl:hidden" />
+            their partnership to <br class="hidden xl:block" />
+            industrialise AI
+            <br class="hidden lg:block xl:hidden" />
+            using open source principles
+          </h1>
+          <button
+            class="bg-red-800 text-white px-5 py-3 mt-5 font-bold font-huumer-bold lg:w-fit"
+          >
+            Read the release
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <section class="lg:w-[80%] lg:mx-auto">
+      <h1 class="px-3 py-5 text-2xl font-humer">What's new</h1>
+
+      <section class="flex flex-col gap-8 md:grid mg:grid-cols-3">
+        <div class="px-3 md:col-span-3 lg:grid lg:grid-cols-2 lg:gap-12">
+          <img
+            src="./assets/Digital-Decade-strategy.jpg"
+            class="h-80 object-cover object-center w-full"
+          />
+
+          <div class="flex flex-col gap-3">
+            <h2
+              class="font-bold py-3 font-huumer-bold text-xl xl:text-3xl hover:text-red-800 cursor-pointer transition-all"
+            >
+              AI for All: Two Suggestions
+            </h2>
+
+            <p class="font-humer-light xl:font-humer xl:text-xl">
+              An article from Mohammed Sijelmassi, the CTO Sopra Steria,
+              published by Euractiv. Europe has talent, excellent research, and
+              top education. The point is scaling up: we need more researchers,
+              AI practitioners, and an open mindset.
+            </p>
+
+            <button
+              class="border border-black w-fit px-5 py-2 font-bold font-huumer-bold my-4 hover:bg-black hover:text-white transition-all ease-in-out duration-500"
+            >
+              Read more on Euractiv
+            </button>
+          </div>
+        </div>
+
+        <div class="px-3">
+          <img
+            src="./assets/article2.jpg"
+            class="h-80 object-cover object-center w-full"
+          />
+
+          <div class="flex flex-col gap-3">
+            <h2
+              class="font-bold py-3 font-huumer-bold underline decoration-red-700 text-xl xl:text-2xl xl:no-underline hover:text-red-800 cursor-pointer transition-all"
+            >
+              Sopra Steria renews its Microsoft Azure Expert Managed Service
+              Provider (MSP) status
+            </h2>
+
+            <p class="text-gray-400 text-xl font-humer">Sep 20, 2022</p>
+
+            <p class="font-humer-light">
+              This renewal demonstrates Sopra Steria’s ability to deliver
+              consistent, repeatable high-fidelity managed services on Azure.
+            </p>
+          </div>
+        </div>
+        <div class="px-3">
+          <img
+            src="./assets/article4.jpg"
+            class="h-80 object-cover object-center w-full"
+          />
+
+          <div class="flex flex-col gap-3">
+            <h2
+              class="font-bold py-3 font-huumer-bold underline decoration-red-700 text-xl xl:text-2xl xl:no-underline hover:text-red-800 cursor-pointer transition-all"
+            >
+              Sopra Steria selected as Airbus’ referenced supplier for its
+              engineering and functional design activities
+            </h2>
+
+            <p class="text-gray-400 text-xl font-humer">Jul 19, 2022</p>
+
+            <p class="font-humer-light">
+              After the EMES3 listing announced in January, covering all
+              engineering activities for all Airbus Group divisions, Sopra
+              Steria confirms its expertise by winning several major contracts
+              within the design office and flight test at Airbus.
+            </p>
+          </div>
+        </div>
+
+        <div class="px-3">
+          <img
+            src="./assets/article5.jpg"
+            class="h-80 object-cover object-center w-full"
+          />
+
+          <div class="flex flex-col gap-3">
+            <h2
+              class="font-bold py-3 font-huumer-bold underline decoration-red-700 text-xl xl:text-2xl xl:no-underline hover:text-red-800 cursor-pointer transition-all"
+            >
+              Sopra Steria chosen by Belgian Integrated Police to drive its
+              digital transformation through the i-Police programme
+            </h2>
+
+            <p class="text-gray-400 text-xl font-humer">Jun 13, 2022</p>
+
+            <p class="font-humer-light">
+              Sopra Steria will be responsible for managing the programme,
+              integrating the solutions that make up the platform, migrating the
+              data, and providing technical and functional support to users.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section
+      class="pt-14 pb-10 px-3 lg:w-[80%] lg:mx-auto lg:relative lg:flex lg:flex-col"
+    >
+      <img src="./assets/inspireWoman.png" class="w-full object-cover" />
+      <div
+        class="lg:-mt-32 lg:bg-white lg:w-96 lg:p-5 lg:flex lg:gap-3 lg:items-center"
+      >
+        <p class="font-huumer-bold text-sm py-2">
+          "The transformations underway in Cloud and AI technologies” with
+          Béatrice Rollet et Kritika Saraswat
+        </p>
+
+        <div class="hidden lg:block bg-red-800 w-fit p-2 rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-5 h-5 text-white"
+          >
+            <path
+              fillRule="evenodd"
+              d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="px-3 py-10 relative flex flex-col justify-center items-center lg:relative lg:justify-start lg:items-start lg:w-[80%] lg:mx-auto"
+    >
+      <img
+        src="./assets/bg-2.jpg"
+        alt="bg"
+        class="h-64 lg:h-[500px] object-cover w-full"
+      />
+
+      <div
+        class="abolute bg-white text-black -mt-48 mx-5 py-5 px-8 flex flex-col gap-5 lg:-mt-[25rem] lg:mx-0 lg:w-[30rem] xl:w-4/6 xl:px-20 xl:py-10"
+      >
+        <h1 class="text-2xl font-huumer-bold lg:text-xl xl:text-3xl">
+          Corporate responsibility Sopra Steria, a committed responsible
+          enterprise
+        </h1>
+
+        <div>
+          <p class="font-humer lg:text-sm xl:text-xl">
+            We, at Sopra Steria, firmly believe that digital is a source of
+            opportunities and progress for all. Combined to a human dimension,
+            it creates a virtuous circle benefiting society as a whole.
+          </p>
+        </div>
+
+        <button
+          class="bg-red-800 text-white w-fit py-2 font-huumer-bold text-start px-4 lg:text-sm"
+        >
+          Learn more about Corporate Responsibility
+        </button>
+      </div>
+    </section>
+
+    <section class="mt-16 lg:mt-44 lg:w-[80%] lg:mx-auto">
+      <h1 class="text-2xl font-humer px-3 py-8 xl:text-3xl">
+        Financial Report
+      </h1>
+
+      <div>
+        <div class="px-3 lg:grid lg:grid-cols-2 lg:gap-9">
+          <img
+            src="./assets/finacial-report.jpg"
+            class="h-80 object-cover object-center w-full"
+          />
+
+          <div class="flex flex-col gap-3">
+            <h2 class="font-bold py-3 font-huumer-bold xl:text-3xl">
+              2021 Universal Registration Document
+            </h2>
+
+            <p class="text-gray-400 text-xl font-humer">Sep 20, 2022</p>
+
+            <p class="font-humer-light">
+              <span class="underline decoration-red-700">Interactive link</span>
+              <span class="underline decoration-red-700">xHTML Link</span>
+            </p>
+
+            <button
+              class="border border-black w-fit px-5 py-2 font-bold font-huumer-bold my-4 hover:bg-black hover:text-white transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-gray-light mt-10 py-4 flex flex-col justify-center items-center gap-10 lg:px-[7rem] lg:gap-20"
+    >
+      <div
+        class="flex flex-col justify-center items-center lg:justify-between lg:flex-row lg:w-full"
+      >
+        <div>
+          <img
+            src="./assets/Sopra-Steria-logo.svg"
+            alt="footer logo"
+            class="w-32 h-5 xl:h-5 xl:object-cover xl:w-56"
+          />
+
+          <p
+            class="font-humer-light text-sm pb-3 py-2 lg:text-xs lg:pl-4 xl:pl-6"
+          >
+            The world is how we shape it
+          </p>
+        </div>
+        <div class="flex gap-3 justify-center items-center">
+          <div class="p-2 border border-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="20"
+              viewBox="0 0 30 30"
+              style="fill: #000000"
+            >
+              <path
+                d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"
+              ></path>
+            </svg>
+          </div>
+          <div class="p-2 border border-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="20"
+              viewBox="0 0 30 30"
+              style="fill: #000000"
+            >
+              <path
+                d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"
+              ></path>
+            </svg>
+          </div>
+          <div class="p-2 border border-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              style="fill: #000000"
+            >
+              <path
+                d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <ul
+        class="flex flex-wrap justify-center xl:justify-start xl:items-start items-center gap-3 font-humer text-sm"
+      >
+        <li>Manage your cookies</li>
+        <li>Contact Us</li>
+        <li>Terms of use</li>
+        <li>Personal data protection charter</li>
+        <li>Warning alert - scam / identify theft</li>
+        <li>Site map</li>
+        <li>Accessibility</li>
+        <li class="text-xl">Sopra Steria 2022©</li>
+      </ul>
+    </footer>
+  </body>
 </html>

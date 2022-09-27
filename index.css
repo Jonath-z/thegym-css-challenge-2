@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+@font-face {
+  font-family: "humer-geometrisans";
+  src: url("./assets/fonts/HurmeGeometricSans2.otf");
+}
+
+@font-face {
+  font-family: "humer-geometrisans-light";
+  src: url("./assets/fonts/HurmeGeometricSans1\ Light.otf");
+}
+
+@font-face {
+  font-family: "humer-geometrisans-thin";
+  src: url("./assets/fonts/HurmeGeometricSans1\ Thin.otf");
+}
+
+@font-face {
+  font-family: "humer-geometrisans-bold";
+  src: url("./assets/fonts/HurmeGeometricSans3\ Bold.otf");
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(247, 247, 247);
+  width: 5px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  width: 5px;
+  height: 5px;
+}
